@@ -12,3 +12,6 @@
 #### Infura:
 - Will give access to Rinkby Network
 - It won't manage Token or ETH, it's just the connection point outside the Rinkey Network
+
+#### Rinkeby Transaction 
+- https://rinkeby.etherscan.io/

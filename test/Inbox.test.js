@@ -15,9 +15,9 @@ let inbox;
 beforeEach(async () => {
     accounts = await web3.eth.getAccounts();
 
-    inbox = await new web3.eth.Contract(JSON.parse(interface))
-        .deploy({ data: bytecode, arguments: ["Hi"] })
-        .send({ from: accounts[0], gas: "1000000" })
+    inbox = await new web3.eth.Contract(JSON.parse(interface)) // Teaches Web3 about what methods an Inbox contract has
+        .deploy({ data: bytecode, arguments: ["Hi"] }) // Tells Web3 that we want to deploy a new copy of this contract
+        .send({ from: accounts[0], gas: "1000000" }) // Instructs Web3 to send out a transaction that creates this contract
 })
 
 describe("Inbox", () => {

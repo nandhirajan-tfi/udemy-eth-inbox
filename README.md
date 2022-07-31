@@ -15,3 +15,12 @@
 
 #### Rinkeby Transaction 
 - https://rinkeby.etherscan.io/
+
+
+#### Deployed Contracts in Remix
+- Copy the Contract Address - 0x51317dE39D4E02a691581104EF7078E65A98F2c1
+- Connect Remix with Metamask
+- 
+
+#### Open Issues
+- Not able to connect Remix with Metamask: Solution - https://github.com/smartcontractkit/full-blockchain-solidity-course-py/discussions/1414

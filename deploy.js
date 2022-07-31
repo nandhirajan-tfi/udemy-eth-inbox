@@ -15,7 +15,7 @@ const deploy = async () => {
         .deploy({ data: bytecode, arguments: ["Hi"] })
         .send({ from: accounts[0], gas: "1000000" });
 
-    console.log("Contract deployed to ", result.options.adderess);
+    console.log("Contract deployed to ", result.options.address);
     provider.engine.stop();
 }
 

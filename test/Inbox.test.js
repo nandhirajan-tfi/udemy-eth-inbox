@@ -26,8 +26,14 @@ describe("Inbox", () => {
         assert.ok(inbox.options.address);
     });
 
-    it("Contract has the default message", async () => {
+    it("Has a default message", async () => {
         const message = await inbox.methods.message().call();
         assert.equal(message, INITIAL_STRING);
+    })
+
+    it("Can change the message", async () => {
+        await inbox.methods.setMessage("Bye").send({ from: accounts[0] });
+        const message = await inbox.methods.message().call();
+        assert.equal(message, "Bye");
     })
 })
